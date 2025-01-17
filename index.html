@@ -77,10 +77,12 @@
                 document.getElementById('phrase').innerText = "الحمد لله";
             } else if (count === 66) {
                 document.getElementById('phrase').innerText = "الله أكبر";
-            } else if (count === 100) {
+            } else if (count === 99) {
                 document.getElementById('phrase').innerText = "لا إله إلا الله";
             }
-        }
+        }else if (count === 100) {
+                document.getElementById('phrase').innerText = "سبحان الله وبحمده، سبحان الله العظيم";
+            }
 
         function resetCount() {
             count = 0;
