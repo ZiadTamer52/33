@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة التسبيح</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .phrase {
+            font-size: 2rem;
+            color: #34495e;
+            margin: 10px 0;
+        }
+        .counter {
+            font-size: 3rem;
+            margin: 20px 0;
+            color: #2c3e50;
+            cursor: pointer;
+            padding: 30px; /* زيادة المسافة داخل الزر */
+            border: 3px solid #87CEEB; /* إطار سماوي */
+            border-radius: 50%;
+            display: inline-block;
+            width: 150px; /* حجم الزر 150px */
+            height: 150px; /* حجم الزر 150px */
+            line-height: 90px; /* لضبط الرقم في المنتصف */
+            background-color: #fff; /* لون الخلفية أبيض */
+            text-align: center; /* لضمان أن النص في المنتصف */
+            font-weight: bold;
+        }
+        button {
+            background-color: #2980b9;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <h1>صفحة التسبيح</h1>
+    <p class="phrase" id="phrase">سبحان الله</p>
+    <div class="counter" id="counter" onclick="increaseCount()">0</div>
+    <br>
+    <button onclick="resetCount()">إعادة التصفير</button>
+
+    <script>
+        let count = 0;
+
+        function increaseCount() {
+            if (count === 100) {
+                resetCount(); // إعادة التصفير إذا كان الرقم 100
+                return;
+            }
+
+            count++;
+            document.getElementById('counter').innerText = count;
+
+            // تغيير النص بناءً على العدد
+            if (count === 33) {
+                document.getElementById('phrase').innerText = "الحمد لله";
+            } else if (count === 66) {
+                document.getElementById('phrase').innerText = "الله أكبر";
+            } else if (count === 100) {
+                document.getElementById('phrase').innerText = "لا إله إلا الله";
+            }
+        }
+
+        function resetCount() {
+            count = 0;
+            document.getElementById('counter').innerText = count;
+            document.getElementById('phrase').innerText = "سبحان الله"; // النص الافتراضي
+        }
+    </script>
+</body>
+</html>
