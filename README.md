@@ -1,6 +1,6 @@
 # Tasbeeh Counter (عداد التسبيح)
 
-![HTML](https://img.shields.io/badge/HTML%2B-blue)
+![HTML](https://img.shields.io/badge/HTML%2B-yellow)
 
 This is a simple web-based Tasbeeh counter that allows users to click on a button to increase the count, which displays specific phrases based on the number. The counter resets automatically after reaching 100, providing a looped experience.
 
