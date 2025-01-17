@@ -39,6 +39,5 @@ This is a simple web-based Tasbeeh counter that allows users to click on a butto
 
 Feel free to customize the phrases, colors, or other aspects of the design by modifying the HTML, CSS, or JavaScript code.
 
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
+## To approach this site:
+https://ziadtamer52.github.io/33/
